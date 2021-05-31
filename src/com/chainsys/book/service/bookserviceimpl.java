@@ -22,7 +22,7 @@ public class bookserviceimpl {
 		bookdaoimpl dao = null;
 		book Product = dao.findById(id);
 		if (Product == null) {
-			throw new booknotfoundException("Product Id Not Found");
+			throw new booknotfoundException("book Id Not Found");
 		} else {
 			book book = null;
 			return book;

@@ -23,7 +23,7 @@ public class bookdaoimpl implements bookdao {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			//con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "root", "password");
-			con = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.20:1521:EBS1228", "apps", "apps");
+			con = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.20:1521:DBEBS12", "apps", "apps");
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}

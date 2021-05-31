@@ -35,8 +35,8 @@ public static void main(String[] args) {
 		
 	
      case 2:
-	       System.out.println("Find the Product By Id");
-	       System.out.println("Enter the Product Id");
+	       System.out.println("Find the book By Id");
+	       System.out.println("Enter the book Id");
 	id = scanner.nextInt();
 	try {
 		book book = service.findById(id);
@@ -48,8 +48,8 @@ public static void main(String[] args) {
 	break;
 	
      case 3:
-			System.out.println("Find the Product By name");
-			System.out.println("Enter the Product name");
+			System.out.println("Find the book By name");
+			System.out.println("Enter the book name");
 			 String name = scanner.next();
 			try {
 				book book = service.findByname(name);
